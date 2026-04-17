@@ -1,4 +1,5 @@
-/* ── Reset & Base ── */
+
+/*default reset for all elements to ensure consistency across browsers */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@ body {
   min-height: 100vh;
 }
 
-/* ── Task 4: Flexbox centering (vertically + horizontally) ── */
+
 .page-wrapper {
   display: flex;
   justify-content: center;
@@ -21,7 +22,7 @@ body {
   padding: 2rem;
 }
 
-/* ── Task 3: Card Styling ── */
+
 .card {
   background-color: #ffffff;
   border: 1px solid #d1d5db;
@@ -34,13 +35,13 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ── Task 4: Transform on hover ── */
+
 .card:hover {
   transform: scale(1.02);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
 }
 
-/* ── Card Image ── */
+
 .card-image {
   width: 100%;
   height: 200px;
@@ -48,12 +49,12 @@ body {
   display: block;
 }
 
-/* ── Card Body ── */
+
 .card-body {
   padding: 1.5rem;
 }
 
-/* ── Task 2: Heading ── */
+
 .card-title {
   font-family: "Syne", sans-serif;
   font-size: 1.4rem;
@@ -62,7 +63,6 @@ body {
   margin-bottom: 0.75rem;
 }
 
-/* ── Task 2: Description ── */
 .card-description {
   font-size: 0.95rem;
   line-height: 1.6;
@@ -70,7 +70,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* ── Task 2: Tech List ── */
+
 .tech-list {
   list-style: none;
   display: flex;
@@ -88,10 +88,10 @@ body {
   border-radius: 999px;
 }
 
-/* ── Task 3: Button Styling ── */
+
 .btn {
   display: inline-block;
-  background-color: #3c3489;
+  background-color: #b278a4;
   color: #ffffff;
   font-family: "DM Sans", sans-serif;
   font-size: 0.9rem;
@@ -104,13 +104,16 @@ body {
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-/* ── Task 3: Button Hover ── */
+
 .btn:hover {
   background-color: #534ab7;
   transform: translateY(-1px);
 }
 
-/* ── Task 4 Bonus: Media Query (responsive) ── */
+.btn-container {
+  text-align: center;
+}
+/* responsive adjustment for smaller screens (for the bonus mark hehe :p) */
 @media (max-width: 600px) {
   .card {
     width: 90%;
